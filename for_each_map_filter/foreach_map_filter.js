@@ -48,7 +48,25 @@ function addKeyAndValue (arr, key, value) {
 //Write a function called vowelCount which accepts a string and returns an object with the 
 //keys as the vowel and the values as the number of times the vowel appears in the string. 
 //This function should be case insensitive so a lowercase letter and uppercase letter should count. 
-function vowelCount (anyString) {
+function vowelCount(str) {
+    let newstr = str.split('');
+    let obj = {};
+    const vowels = "aeiou";
+    newstr.forEach(function (val) {
+        let term = val.toLowerCase();
+        if (vowels.indexOf(term) !== -1) {
+            if (obj[term]) {
+                obj[term]++;
+            }
+            else {
+                obj[term] = 1;
+            }
+        }
+    });
+    return obj;
+}
+
+/*function vowelCount (anyString) {
     let newString = anyString.toLowerCase(); 
     let arr = newString.split('');
     let vowelObject = {
@@ -76,7 +94,7 @@ function vowelCount (anyString) {
         }    
     })
     return vowelObject;
-}
+}*/
 
 //MAP Exercises
 //Write a function called doubleValuesWithMap which accepts an array and returns a new array 
