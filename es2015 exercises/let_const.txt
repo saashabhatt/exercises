@@ -1,0 +1,19 @@
+ES2015 Global Constants
+const PI = 3.14;
+PI = 42; //Error
+
+Quiz:
+What is the difference between var and let?
+Var allows you to redeclare and reassign variables whereas with let, one can only reassign variables. In addition let is
+block scoped whereas var is function scoped and is hoiseted to the top of the scope it is defined in.
+
+What is the difference between var and const?
+Var allows you to redeclare and reassign variables whereas with const, one can neither redeclare or reassign variables. 
+Like let, const is also block-scoped.
+
+What is the difference between let and const?
+Let allows reassigning a variable whereas const does not. 
+
+What is hoisting?
+Hosting is Javascript's behaviour of moving variable declarations to the top of scope it is defined in. Only declarations 
+are hoisted, initializations are not. 
